@@ -33,3 +33,6 @@ cd CS4501-Labs/lab4_ws
 source devel/setup.bash
 rviz
 ```
+
+# Thanks
+This docker set up was originally [designed by](https://github.com/brian-yu/cs4501-robotics-docker) a former CS-4501 student. Special thanks to Brian Yu for his initial insight in configuring the system.
