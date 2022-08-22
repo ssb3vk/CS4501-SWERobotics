@@ -1,20 +1,44 @@
-FROM osrf/ros:melodic-desktop-full
+FROM ubuntu:18.04
 
+# Set the work directory 
 WORKDIR /root
 
-# install dependencies
-RUN apt-get -qq update && \
-    apt-get -qq install -y \
-        python-catkin-tools \
-        ros-melodic-mav-msgs \
-        libsdl-image1.2-dev \
-        python-tk \
-        ros-melodic-imu-filter-madgwick \
-        python-pip
+# Minimal setup
+RUN apt-get update && \
+    apt-get install -y \
+    build-essential \
+    lsb-release \
+    locales \
+    gnupg2
 
+# Stop questions about geography
+ARG DEBIAN_FRONTEND=noninteractive
+RUN dpkg-reconfigure locales
+
+# Prepare ROS installation
+RUN sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+RUN apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
+
+# Install ROS melodic
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+    ros-melodic-desktop-full
+
+# Install additional packages
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+    ros-melodic-imu-filter-madgwick \
+    ros-melodic-mav-msgs \
+    libsdl-image1.2-dev \
+    python-catkin-tools \
+    python-tk \
+    python-pip 
+
+# Setup ROS dep
+RUN apt-get install -y --no-install-recommends python-rosdep
+RUN rosdep init \
+ && rosdep fix-permissions \
+ && rosdep update
+
+# Source ROS
 RUN echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
-
-RUN python2 -m pip install --upgrade pip
-RUN python2 -m pip install keras==2.3.0
-RUN python2 -m pip install tensorflow==1.14
-RUN python2 -m pip install sklearn
