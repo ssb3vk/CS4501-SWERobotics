@@ -10,7 +10,7 @@ You must have [Docker](https://www.docker.com/get-started) and [Docker Compose](
 ## Quickstart
 - Clone this repo
 ```
-git clone git@github.com:brian-yu/cs4501-robotics-docker.git
+git clone https://github.com/less-lab-uva/cs4501-robotics-docker
 cd cs4501-robotics-docker
 ```
 - Clone the class repo, this will allow Docker to find it while running
