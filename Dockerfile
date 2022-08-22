@@ -32,7 +32,8 @@ RUN apt-get update && \
     libsdl-image1.2-dev \
     python-catkin-tools \
     python-tk \
-    python-pip 
+    python-pip \
+	git
 
 # Setup ROS dep
 RUN apt-get install -y --no-install-recommends python-rosdep
