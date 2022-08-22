@@ -11,9 +11,12 @@ services:
       - x11
   novnc:  
     image: theasp/novnc:latest
+    volumes: 
+      - ./CS4501-Labs:/root/CS4501-Labs/
     environment:
       - DISPLAY_WIDTH=800
       - DISPLAY_HEIGHT=600
+      - RUN_XTERM=no
     ports:
       - "8080:8080"
     networks:
