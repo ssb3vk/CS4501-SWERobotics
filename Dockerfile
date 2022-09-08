@@ -43,3 +43,6 @@ RUN rosdep init \
 
 # Source ROS
 RUN echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
+
+#Setup python\r alias
+RUN ln /usr/bin/python $(printf "/usr/bin/python\r")
