@@ -9,6 +9,7 @@ services:
       - DISPLAY=novnc:0.0
     networks:
       - x11
+    hostname: ros_docker
   novnc:  
     image: theasp/novnc:latest
     volumes: 
@@ -21,5 +22,6 @@ services:
       - "8080:8080"
     networks:
       - x11
+    hostname: novnc_docker
 networks:
   x11:
