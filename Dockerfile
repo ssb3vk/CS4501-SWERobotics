@@ -9,7 +9,9 @@ RUN apt-get update && \
     build-essential \
     lsb-release \
     locales \
-    gnupg2
+    gnupg2 \
+    gfortran \
+    htop 
 
 # Stop questions about geography
 ARG DEBIAN_FRONTEND=noninteractive
@@ -40,6 +42,14 @@ RUN apt-get install -y --no-install-recommends python-rosdep
 RUN rosdep init \
  && rosdep fix-permissions \
  && rosdep update
+
+RUN python -m pip install --upgrade pip && \
+    python -m pip install \
+    tensorflow==1.5 \
+    keras==2.1.4 \
+    tqdm==4.64.1 \
+    sklearn==0.0 \
+    h5py==2.10.0
 
 # Source ROS
 RUN echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
