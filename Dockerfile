@@ -10,8 +10,7 @@ RUN apt-get update && \
     lsb-release \
     locales \
     gnupg2 \
-    gfortran \
-    htop 
+    gfortran 
 
 # Stop questions about geography
 ARG DEBIAN_FRONTEND=noninteractive
@@ -45,11 +44,8 @@ RUN rosdep init \
 
 RUN python -m pip install --upgrade pip && \
     python -m pip install \
-    tensorflow==1.5 \
-    keras==2.1.4 \
     tqdm==4.64.1 \
-    sklearn==0.0 \
-    h5py==2.10.0
+    sklearn 
 
 # Source ROS
 RUN echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
