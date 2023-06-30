@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<launch>
+
+  <arg name="map_width" default="23" />
+  <arg name="map_height" default="23" />
+  <arg name="samples" default="200" />
+  <arg name="acceptance_range" default="0.1" />
+  <arg name="scanning_duration" default="2" />
+
+	<!-- TODO add any calls to your code -->
+  
+  <node pkg="simple_control" type="door_detector.py" name="door_detector_node" output="screen">
+    <param name="map_width" type="int" value="$(arg map_width)" />
+    <param name="map_height" type="int" value="$(arg map_height)" />
+    <param name="samples" type="int" value="$(arg samples)" />
+  </node>
+
+  <node pkg="simple_control" type="path_planner.py" name="path_planner_node" output="screen">
+    <param name="map_width" type="int" value="$(arg map_width)" />
+    <param name="map_height" type="int" value="$(arg map_height)" />
+  </node>
+  
+  <node pkg="simple_control" type="map_generator.py" name="map_generator_node" output="screen">
+    <param name="map_width" type="int" value="$(arg map_width)" />
+    <param name="map_height" type="int" value="$(arg map_height)" />
+  </node>
+
+  <node pkg="simple_control" type="drone_state.py" name="drone_state_node" output="screen">
+    <param name="acceptance_range" type="double" value="$(arg acceptance_range)" />
+    <param name="scanning_duration" type="double" value="$(arg scanning_duration)" />
+  </node>
+
+</launch>

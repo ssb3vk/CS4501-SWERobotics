@@ -1,0 +1,18 @@
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target _simple_control_generate_messages_check_deps_toggle_geofence
+[ 42%] [34m[1mGenerating EusLisp code from simple_control/toggle_geofence.srv[0m
+[ 42%] [34m[1mGenerating Lisp code from simple_control/toggle_geofence.srv[0m
+[ 42%] [34m[1mGenerating C++ code from simple_control/toggle_geofence.srv[0m
+[ 57%] [34m[1mGenerating Javascript code from simple_control/toggle_geofence.srv[0m
+[ 71%] [34m[1mGenerating Python code from SRV simple_control/toggle_geofence[0m
+[ 71%] Built target simple_control_generate_messages_nodejs
+[ 71%] Built target simple_control_generate_messages_lisp
+[ 85%] Built target simple_control_generate_messages_eus
+[ 85%] Built target simple_control_generate_messages_cpp
+[100%] [34m[1mGenerating Python srv __init__.py for simple_control[0m
+[100%] Built target simple_control_generate_messages_py
+[100%] Built target simple_control_generate_messages

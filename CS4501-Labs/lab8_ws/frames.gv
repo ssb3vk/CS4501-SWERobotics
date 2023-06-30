@@ -1,0 +1,9 @@
+digraph G {
+"world" -> "tower"[label=" Broadcaster: /tower_broadcaster\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"world" -> "world/ned"[label=" Broadcaster: /uav/world_ned_link\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"world" -> "uav/imu"[label=" Broadcaster: /uav/flightgoggles_uav_dynamics\nAverage rate: 96.202\nBuffer length: 4.958\nMost recent transform: 65.594\nOldest transform: 60.635\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 65.604168766"[ shape=plaintext ] ;
+}->"world";
+}

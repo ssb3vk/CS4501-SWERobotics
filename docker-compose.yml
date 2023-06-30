@@ -15,8 +15,8 @@ services:
     volumes: 
       - ./CS4501-Labs:/root/CS4501-Labs/
     environment:
-      - DISPLAY_WIDTH=800
-      - DISPLAY_HEIGHT=600
+      - DISPLAY_WIDTH=1200
+      - DISPLAY_HEIGHT=900
       - RUN_XTERM=no
     ports:
       - "8080:8080"

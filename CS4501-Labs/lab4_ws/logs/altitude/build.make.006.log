@@ -1,0 +1,18 @@
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target _altitude_generate_messages_check_deps_AltitudeStamped
+[ 57%] [34m[1mGenerating Javascript code from altitude/AltitudeStamped.msg[0m
+[ 57%] [34m[1mGenerating EusLisp code from altitude/AltitudeStamped.msg[0m
+[ 57%] [34m[1mGenerating Lisp code from altitude/AltitudeStamped.msg[0m
+[ 71%] [34m[1mGenerating C++ code from altitude/AltitudeStamped.msg[0m
+[ 71%] [34m[1mGenerating Python from MSG altitude/AltitudeStamped[0m
+[ 71%] Built target altitude_generate_messages_nodejs
+[ 71%] Built target altitude_generate_messages_lisp
+[ 85%] Built target altitude_generate_messages_eus
+[ 85%] Built target altitude_generate_messages_cpp
+[100%] [34m[1mGenerating Python msg __init__.py for altitude[0m
+[100%] Built target altitude_generate_messages_py
+[100%] Built target altitude_generate_messages

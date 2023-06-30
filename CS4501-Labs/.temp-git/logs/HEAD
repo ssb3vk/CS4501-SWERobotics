@@ -1,0 +1,14 @@
+0000000000000000000000000000000000000000 ca4e212db62e9786d2914e98f29b783cc4496ee3 ssb3vk <ssb3vk@virgina.edu> 1661803505 -0400	clone: from https://github.com/less-lab-uva/CS4501-Labs.git
+ca4e212db62e9786d2914e98f29b783cc4496ee3 bd6b2dc6c04b7cadb150353bd4dccd76de869efc root <root@51e2b661d9cc.(none)> 1661975257 +0000	pull: Fast-forward
+bd6b2dc6c04b7cadb150353bd4dccd76de869efc 2c93162f4571823e96d78c61bde1db3d06b90f2f root <root@51e2b661d9cc.(none)> 1662579524 +0000	pull: Fast-forward
+2c93162f4571823e96d78c61bde1db3d06b90f2f e2a22a5153d821efa615f3cd965ef5933b894941 root <root@51e2b661d9cc.(none)> 1663184200 +0000	pull: Fast-forward
+e2a22a5153d821efa615f3cd965ef5933b894941 c0d5ba498145d783d117f7d22511cf48777efc45 root <root@51e2b661d9cc.(none)> 1663788203 +0000	pull: Fast-forward
+c0d5ba498145d783d117f7d22511cf48777efc45 845153c5b6908190b2aafd29736a41ae219852ca root <root@ros_docker.(none)> 1664395032 +0000	pull: Fast-forward
+845153c5b6908190b2aafd29736a41ae219852ca c4be2dee29e94fd2d854c8b8a1151ed12a7b4bc5 root <root@ros_docker.(none)> 1666208085 +0000	pull: Fast-forward
+c4be2dee29e94fd2d854c8b8a1151ed12a7b4bc5 939ad0cc8a0fb9fe63dc99ce77399e7fd745ad85 ssb3vk <ssb3vk@virginia.edu> 1666908236 +0000	commit: lab4 files
+939ad0cc8a0fb9fe63dc99ce77399e7fd745ad85 679991f3132aea14a91d2efd46cc7ae599a7e35f ssb3vk <ssb3vk@virginia.edu> 1666908258 +0000	commit: lab4 files
+679991f3132aea14a91d2efd46cc7ae599a7e35f 679991f3132aea14a91d2efd46cc7ae599a7e35f ssb3vk <ssb3vk@virginia.edu> 1667323975 +0000	reset: moving to HEAD
+679991f3132aea14a91d2efd46cc7ae599a7e35f 939ad0cc8a0fb9fe63dc99ce77399e7fd745ad85 ssb3vk <ssb3vk@virginia.edu> 1667324038 +0000	reset: moving to HEAD~1
+939ad0cc8a0fb9fe63dc99ce77399e7fd745ad85 939ad0cc8a0fb9fe63dc99ce77399e7fd745ad85 ssb3vk <ssb3vk@virginia.edu> 1667332997 +0000	reset: moving to HEAD
+939ad0cc8a0fb9fe63dc99ce77399e7fd745ad85 5ec3e829d332a1e3c6957b8903ee5500408296df ssb3vk <ssb3vk@virginia.edu> 1667333534 +0000	commit (merge): temporary merge
+5ec3e829d332a1e3c6957b8903ee5500408296df 5eb03ced25aa94d3dac8324f2d2e179a7cb4145a Sid Burre <ssb3vk@virginia.edu> 1668982242 +0000	commit (merge): dummy commit

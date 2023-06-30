@@ -1,0 +1,24 @@
+[35m[1mScanning dependencies of target std_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target _sensor_simulation_generate_messages_check_deps_calibrate[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_eus[0m
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target _sensor_simulation_generate_messages_check_deps_calibrate
+[35m[1mScanning dependencies of target sensor_simulation_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target sensor_simulation_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target sensor_simulation_generate_messages_py[0m
+[35m[1mScanning dependencies of target sensor_simulation_generate_messages_eus[0m
+[35m[1mScanning dependencies of target sensor_simulation_generate_messages_cpp[0m
+[ 28%] Built target sensor_simulation_generate_messages_lisp
+[ 28%] Built target sensor_simulation_generate_messages_nodejs
+[ 57%] Built target sensor_simulation_generate_messages_py
+[ 71%] Built target sensor_simulation_generate_messages_cpp
+[100%] Built target sensor_simulation_generate_messages_eus
+[35m[1mScanning dependencies of target sensor_simulation_generate_messages[0m
+[100%] Built target sensor_simulation_generate_messages

@@ -1,0 +1,9 @@
+digraph G {
+"world" -> "cell_tower"[label=" Broadcaster: /environment_controller\nAverage rate: 20.221\nBuffer length: 4.896\nMost recent transform: 661.292\nOldest transform: 656.396\n"];
+"world" -> "world/ned"[label=" Broadcaster: /uav/world_ned_link\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"world" -> "uav/imu"[label=" Broadcaster: /uav/flightgoggles_uav_dynamics\nAverage rate: 96.203\nBuffer length: 4.938\nMost recent transform: 661.302\nOldest transform: 656.365\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 661.312521162"[ shape=plaintext ] ;
+}->"world";
+}

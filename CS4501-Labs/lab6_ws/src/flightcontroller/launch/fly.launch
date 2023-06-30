@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<launch>
+
+  <arg name="logging" default="screen" />
+  <arg name="ship_velocity" default="0.1" /> <!-- velocity between 0 and 5 m/s -->
+  <arg name="ship_waypoints" default="[[0, 0]]"/>
+<!-- "[[2,6],[2,-4],[-2,-2],[4,-2],[-5,5],[4,4],[-6,-6]]"  -->
+  <!-- <arg name="ship_waypoints" default="[[[8, 0], [6, 0], [4, 0] ,[2, 0] ,[0, 0], [2, 0], [4, 0], [6, 0], [8, 0]]]" /> -->
+  <!-- Global as it is used by both ship_following_controller_node and ship_node -->
+  <arg name="followed_epsilon" default="3.0"/>
+
+  <include file="$(find flightgoggles)/launch/core.launch">
+  </include>
+
+  <include file="$(find visualizer)/launch/view.launch">
+  </include>
+
+  <include file="$(find flightcontroller)/launch/angle.launch">
+  </include>
+
+  <include file="$(find sensor_simulation)/launch/sensors.launch">
+    <arg name="logging" default="$(arg logging)" />
+    <arg name="ship_waypoints" default="$(arg ship_waypoints)" />
+    <arg name="ship_velocity" default="$(arg ship_velocity)" />
+    <arg name="followed_epsilon" default="$(arg followed_epsilon)" />
+  </include>
+
+  <arg name="pxy" default="0.001" />
+  <arg name="ixy" default="0.000001" /> <!--0.00001-->
+  <arg name="dxy" default="0.00001" /> <!--for pull back, stops from reaching setpoint too quickly-->
+  <!--0.01 = k_u 6 = l_u-->
+  
+  <arg name="pz" default="0.01" />
+  <!-- <arg name="iz" default="0" /> 0.1, 2.0 -->
+  <arg name="iz" default="0" />
+  <arg name="dz" default="0" />
+  <arg name="rate" default="10" />
+
+  <node pkg="flightcontroller" type="attitude_thrust_controller.py" name="attitude_thrust_controller_node" output="screen">
+  </node>
+
+  <node pkg="simple_control" type="ship_following_controller.py" name="ship_following_controller_node" output="screen">
+    <param name="zpid/p" value="$(arg pz)" />
+    <param name="zpid/i" value="$(arg iz)" />
+    <param name="zpid/d" value="$(arg dz)" />
+    <param name="pid/p" value="$(arg pxy)" />
+    <param name="pid/i" value="$(arg ixy)" />
+    <param name="pid/d" value="$(arg dxy)" />
+    <param name="rate" value="$(arg rate)" />
+  </node>
+
+</launch>

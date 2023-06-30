@@ -1,0 +1,20 @@
+Symlinking /root/CS4501-Labs/lab3_ws/devel/include/simple_control/toggle_geofence.h
+Symlinking /root/CS4501-Labs/lab3_ws/devel/include/simple_control/toggle_geofenceRequest.h
+Symlinking /root/CS4501-Labs/lab3_ws/devel/include/simple_control/toggle_geofenceResponse.h
+Linked: (/root/CS4501-Labs/lab3_ws/devel/.private/simple_control/lib/pkgconfig/simple_control.pc, /root/CS4501-Labs/lab3_ws/devel/lib/pkgconfig/simple_control.pc)
+Symlinking /root/CS4501-Labs/lab3_ws/devel/lib/python2.7/dist-packages/simple_control/__init__.py
+Symlinking /root/CS4501-Labs/lab3_ws/devel/lib/python2.7/dist-packages/simple_control/srv/_toggle_geofence.py
+Symlinking /root/CS4501-Labs/lab3_ws/devel/lib/python2.7/dist-packages/simple_control/srv/__init__.py
+Symlinking /root/CS4501-Labs/lab3_ws/devel/share/common-lisp/ros/simple_control/srv/simple_control-srv.asd
+Symlinking /root/CS4501-Labs/lab3_ws/devel/share/common-lisp/ros/simple_control/srv/toggle_geofence.lisp
+Symlinking /root/CS4501-Labs/lab3_ws/devel/share/common-lisp/ros/simple_control/srv/_package.lisp
+Symlinking /root/CS4501-Labs/lab3_ws/devel/share/common-lisp/ros/simple_control/srv/_package_toggle_geofence.lisp
+Symlinking /root/CS4501-Labs/lab3_ws/devel/share/gennodejs/ros/simple_control/_index.js
+Symlinking /root/CS4501-Labs/lab3_ws/devel/share/gennodejs/ros/simple_control/srv/toggle_geofence.js
+Symlinking /root/CS4501-Labs/lab3_ws/devel/share/gennodejs/ros/simple_control/srv/_index.js
+Symlinking /root/CS4501-Labs/lab3_ws/devel/share/roseus/ros/simple_control/manifest.l
+Symlinking /root/CS4501-Labs/lab3_ws/devel/share/roseus/ros/simple_control/srv/toggle_geofence.l
+Symlinking /root/CS4501-Labs/lab3_ws/devel/share/simple_control/cmake/simple_control-msg-extras.cmake
+Symlinking /root/CS4501-Labs/lab3_ws/devel/share/simple_control/cmake/simple_control-msg-paths.cmake
+Linked: (/root/CS4501-Labs/lab3_ws/devel/.private/simple_control/share/simple_control/cmake/simple_controlConfig-version.cmake, /root/CS4501-Labs/lab3_ws/devel/share/simple_control/cmake/simple_controlConfig-version.cmake)
+Linked: (/root/CS4501-Labs/lab3_ws/devel/.private/simple_control/share/simple_control/cmake/simple_controlConfig.cmake, /root/CS4501-Labs/lab3_ws/devel/share/simple_control/cmake/simple_controlConfig.cmake)
